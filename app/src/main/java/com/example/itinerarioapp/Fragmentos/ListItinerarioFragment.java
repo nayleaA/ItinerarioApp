@@ -37,11 +37,11 @@ public class ListItinerarioFragment extends Fragment {
         database = dbHelper.getReadableDatabase();
 
         // Cargar datos desde la base de datos SQLite
-        loadDataFromDatabase();
-
+       // loadDataFromDatabase();
+        return recyclerView;
     }
 
-    private void loadDataFromDatabase() {
+   /* private void loadDataFromDatabase() {
         Cursor cursor = database.rawQuery("SELECT * FROM tabla_datos", null);
 
         if (cursor.moveToFirst()) {
@@ -64,6 +64,6 @@ public class ListItinerarioFragment extends Fragment {
         }
         // Cerrar el cursor
         cursor.close();
-    }
+    }*/
 
 }
